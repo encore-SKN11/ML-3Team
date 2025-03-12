@@ -11,7 +11,7 @@
   <thead>
     <td align="center">
       <a href="">
-        <img src="" width="150" alt="hojin"/><br /><hr/>
+        <img src="" width="150" alt="jungsu"/><br /><hr/>
         배정수
       </a><br />
     </td>
