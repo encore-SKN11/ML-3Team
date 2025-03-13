@@ -114,6 +114,8 @@
 
 ### 4-1. 전체 데이터 Heatmap
 ![eda06](https://github.com/user-attachments/assets/37e43b2a-9041-46f4-b9a8-1c07f102283f)
+![image](https://github.com/user-attachments/assets/e5125f59-0307-488b-9c78-f60e70f523a7)
+
 
 <br/>
 
@@ -123,7 +125,7 @@
 <br/>
 
 ### 4-2. 연령별 폐암 환자 분포 시각화
-![eda08](https://github.com/user-attachments/assets/f1d2572e-7e02-4518-90b2-fb3f0b0ede27)
+![eda09](https://github.com/user-attachments/assets/654e7f62-3fd4-4462-93b1-16008c72da48)
 
 <br/>
 
@@ -156,6 +158,13 @@
 - 4-4-3. 각 특성별 폐암 진행 중 Level 3 분포 시각화
 ![eda16](https://github.com/user-attachments/assets/40222c9c-aa89-4c32-b6df-ad05f0e94366)
 
+
+<br/><br/>
+
+# 7️⃣ 도출한 인사이트
+- 기존 예측: 폐암 발병 및 진행 level은 공기 오염도와 연관이 높다.
+- 데이터를 통해 실제로 도출해낸 것: 폐암 발병의 top6 요인은 비만, 알코올, 균형잡히지 않은 식단, 먼지 알레르기, 유전적 요인, 간접 흡연이다.
+- 흡연자보다 간접 흡연자가 폐암 위험도가 높다.
 
 <br/><br/>
 
