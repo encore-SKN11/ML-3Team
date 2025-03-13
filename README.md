@@ -71,24 +71,91 @@
 <br/><br/>
 
 # 5️⃣분석 방법
-## 1. 데이터 전처리 및 정제
-- 결측치 및 이상치 탐색 및 처리
-- 변수별 분포 확인 및 데이터 변환(필요 시)
+## 1. 데이터 로드
+- csv 데이터 파일 로드
 
-## 2. EDA(탐색적 데이터 분석)
-- 폐암 진행 속도(Level)와 변수 간 관계 분석
-- 주요 요인들의 분포 및 상관관계 시각화(히트맵, 박스플롯 등)
+## 2. 데이터 구조 확인 및 기초 통계 확인
+- 데이터 구조 파악을 위한 head, info, describe 함수 사용
 
-## 3. 주요 변수 도출
-- 어떤 변수들이 폐암 진행 속도에 영향을 미치는지 탐색
-- 상관 분석 및 요인 분석을 통해 폐암 진행과 연관성이 높은 요인 도출
+## 3. 결측치 탐색
+- isnull 함수를 사용해 결측치 값이 존재하는지 확인
 
-## 4. 결과 해석 및 인사이트 도출
+## 4. 데이터 시각화를 통한 탐색
 - 데이터를 기반으로 폐암 진행을 예측할 수 있는 패턴을 분석
 - 폐암 예방 및 치료에 활용할 수 있는 인사이트 제공
 <br/><br/>
 
 # 6️⃣시각화 결과
+
+## 1. 데이터 로드
+![eda01](https://github.com/user-attachments/assets/72eba9e5-113b-4fa5-93ce-ae60fe31b4dc)
+
+<br/><br/>
+
+## 2. 데이터 구조 확인 및 기초 통계 확인
+- 2-1. 데이터 구조 확인 (info)
+![eda02](https://github.com/user-attachments/assets/928c7eca-61c6-4f48-8a22-3fd65267f908)
+
+<br/>
+
+- 2-2. 데이터 구조 확인 (describe)
+![eda03](https://github.com/user-attachments/assets/efa689ac-3159-4ff1-9d86-a5419743be9b)
+![eda04](https://github.com/user-attachments/assets/4365be22-8aa5-4e38-a03d-1e053658b11e)
+
+<br/><br/>
+
+## 3. 결측치 탐색
+- 3-1. 데이터 결측치 확인
+![eda05](https://github.com/user-attachments/assets/ba6b8933-04b1-4cea-bea2-2868af602994)
+
+<br/><br/>
+
+## 4. 데이터 시각화를 통한 탐색
+
+### 4-1. 전체 데이터 Heatmap
+![eda06](https://github.com/user-attachments/assets/37e43b2a-9041-46f4-b9a8-1c07f102283f)
+
+<br/>
+
+- 4-1-1. 상대적으로 연관 없는 컬럼 삭제하기
+![eda07](https://github.com/user-attachments/assets/a88eb5fc-fd5e-4d44-ab08-6f30290cbe2f)
+
+<br/>
+
+### 4-2. 연령별 폐암 환자 분포 시각화
+![eda08](https://github.com/user-attachments/assets/f1d2572e-7e02-4518-90b2-fb3f0b0ede27)
+
+<br/>
+
+- 4-2-1, 20대 미만과 20대 이상 중 Alhocol use, Smoking 컬럼 시각화
+![eda10](https://github.com/user-attachments/assets/079ebfa4-425c-4c3b-8bd3-21a00d1a3947)
+![eda11](https://github.com/user-attachments/assets/3706dc57-6a3c-4c53-ad6c-28c90ae0e3cd)
+
+<br/><br/>
+
+### 4-3. 연관있는 컬럼들 시각화
+![eda12](https://github.com/user-attachments/assets/c7c7bec3-51d6-4f29-817d-ce3f91f214fc)
+
+<br/><br/>
+
+### 4-4. 폐암 진행 Level
+![eda13](https://github.com/user-attachments/assets/c471163a-2f25-46dc-9120-bba1aa54970a)
+
+<br/>
+
+- 4-4-1. 각 특성에 따른 폐암 진행 Level 시각화
+![eda14](https://github.com/user-attachments/assets/711b8281-25b3-4851-832f-c1d3180b592a)
+
+<br/>
+
+- 4-4-2. 공기 오염도에 따른 Level 시각화
+![eda15](https://github.com/user-attachments/assets/f41421ee-4b51-456b-a8ab-973721c7bc2c)
+
+<br/>
+
+- 4-4-3. 각 특성별 폐암 진행 중 Level 3 분포 시각화
+![eda16](https://github.com/user-attachments/assets/40222c9c-aa89-4c32-b6df-ad05f0e94366)
+
 
 <br/><br/>
 
