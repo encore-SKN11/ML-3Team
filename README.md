@@ -44,6 +44,9 @@
 
 ## 📂사용한 데이터
 -  [Lung Cancer Prediction](https://www.kaggle.com/datasets/thedevastator/cancer-patients-and-air-pollution-a-new-link/data?status=pending&suggestionBundleId=178)
+  - 데이터 수집 기간: 정확한 기간은 명시되지 않았으나, 6년간 수집한 데이터
+
+
 <br/>
 
 # 3️⃣기술 스택
