@@ -90,8 +90,8 @@
   - LDA <br/>
   ![image](https://github.com/user-attachments/assets/dda3bc28-7b24-4a28-8ebb-2861787d7d37)
 
-- LDA 후 K값에 따른 성능 변화 시각화
-  ![image](https://github.com/user-attachments/assets/0059e903-b762-4ced-ab2c-52d297a70bae)
+- LDA 후 K값에 따른 성능 변화 시각화<br/>
+  ![image](https://github.com/user-attachments/assets/0059e903-b762-4ced-ab2c-52d297a70bae)<br/>
 
  <br/>
    
