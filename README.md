@@ -109,7 +109,7 @@
   ![image](https://github.com/user-attachments/assets/66686203-c1ea-4b20-ad9a-a88e1f53f74b) <br/>
   -> EDA에서 도출해낸 결과와 비슷한 결과를 보임
 - 과적합 문제를 해결하기 위한 방안: 하이퍼 파라미터 조정
-  - max_depth=5 (트리의 최대 깊이), n_samples_split=5 (내부 노드의 최소 샘플 수) 조정<br/>
+  - `max_depth=5` (트리의 최대 깊이), `n_samples_split=5` (내부 노드의 최소 샘플 수) 조정<br/>
   - 정확도: 96% <br/>
   ![image](https://github.com/user-attachments/assets/4d75e2b9-99a9-4388-9804-fae739413acc) <br/>
 
@@ -135,7 +135,7 @@
 <br/><br/>
 
 # 8️⃣ 앙상블 적용하기
-- KNN, Logistic Regression, Random Forest, SVC
+- `KNN`, `Logistic Regression`, `Random Forest`, `SVC`
 ### Hard Voting
 - 적용 이유: 학습기를 결합시켜 강한 학습기를 만들기 위해 사용
 - Hard Voting 시각화
