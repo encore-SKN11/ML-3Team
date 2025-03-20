@@ -56,8 +56,14 @@
 # 4️⃣ WBS
 | 작업 명                | 시작일 | 종료일 | 담당자         | 산출물        |
 |-------------------------|-------|-------|-----------------|---------------|
-| Machine Learning 모델 적용       | 03-14 | 03-19 | ALL    |  Jupyter Notebook  | 
-| 문서 작업   | 03-19 | 03-20 | 배정수, 현유경            |  README.md     | 
+| Machine Learning 모델 선택       | 03-14 | 03-14 | ALL    |  [GitHub Wiki](https://github.com/encore-SKN11/ML-3Team/wiki/%F0%9F%A4%96-%EC%96%B4%EB%96%A4-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%AA%A8%EB%8D%B8%EC%9D%84-%EC%A0%81%EC%9A%A9%ED%95%A0%EA%B9%8C)  | 
+| KNN, Logisitic Regression, Decision Tree 모델 실행       | 03-15 | 03-17 | ALL    |  Jupyter Notebook, 그래프 시각화  | 
+| KNN 모델 실행 및 KNN 학습       | 03-14 | 03-20 | 신준희    |  Jupyter Notebook, 그래프 시각화  |
+| Decision Tree 및 Random Forest를 통한 학습       | 03-15 | 03-20 | 배정수, 현유경    |  Jupyter Notebook, 그래프 시각화  | 
+| 각 모델 교차 검증 및 모델 최적화       | 03-15 | 03-20 | 배정수    |  Jupyter Notebook, 그래프 시각화  | 
+| SVC 및 DecisionBoundaryDisplay를 통한 시각화    | 03-15 | 03-20 | 신준희, 현유경    |  Jupyter Notebook, 그래프 시각화  | 
+| Voting Classifier       | 03-17 | 03-20 | 현유경    |  Jupyter Notebook, 그래프 시각화  |
+| 문서 작업   | 03-19 | 03-20 | 배정수, 현유경   |  README.md     | 
 | 발표 준비   | 03-19 | 03-20 | 신준희             |  발표     |
 | 최종 점검                | 03-20 | 03-21 | ALL             |               | 
 
