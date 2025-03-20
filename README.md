@@ -68,7 +68,7 @@
 - EDA를 통해 파악한 데이터 구조 활용
   - `Target data`: 페암 진행 레벨 컬럼
   - `Input data`: EDA를 통해 폐암 진행 레벨과 상관관계를 보인 컬럼
-> [!NOTE]
+> [!IMPORTANT]
 > Input data를 폐암 진행 레벨(1,2,3)로 분류하는 것이니 지도학습 중 분류 모델을 사용하자!
 
 <br/><br/>
