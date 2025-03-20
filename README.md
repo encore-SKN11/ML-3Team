@@ -11,7 +11,7 @@
   <thead>
     <td align="center">
       <a href="">
-        <img src="https://github.com/user-attachments/assets/a28f14f0-2e04-4bb9-be4f-2fe81924e523" height="150" width="200" alt="jungsu"/><br /><hr/>
+        <img src="https://github.com/user-attachments/assets/a28f14f0-2e04-4bb9-be4f-2fe81924e523" height="200" width="200" alt="jungsu"/><br /><hr/>
         배정수
       </a><br />
     </td>
