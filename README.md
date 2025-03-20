@@ -77,6 +77,9 @@
 ### 1) KNN
 - 적용 이유: 비선형 데이터에서 정확도가 높은 모델
 - 정확도: 98.4% -> ⚠️ 과적합 의심
+- K 값에 따른 성능 변화 시각화 <br/>
+  ![image](https://github.com/user-attachments/assets/09042a78-2ede-4e60-914e-eb36da9a9a89)
+
 - KFold를 통한 교차검증 진행
   - 모델 정확도: 99.2% <br/>
   ![image](https://github.com/user-attachments/assets/36aa70bc-cb92-43e6-9cba-7d6ab1a4a932) <br/>
