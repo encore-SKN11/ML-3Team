@@ -134,13 +134,11 @@
 - 정확도<br/>
   ![image](https://github.com/user-attachments/assets/4b42e0d6-00bc-4dd0-8fe6-670e0618336d) <br/>
 - DecisionBoundaryDisplay를 통한 시각화
-  - A) 차원이 맞지 않아 시각화 실패
-    ![image](https://github.com/user-attachments/assets/e45589e5-0bed-4ba3-bb9f-6c565264b461) <br/>
-  - B) PCA를 사용한 차원 축소
+  - A) PCA를 사용한 차원 축소
     - 적용 이유: 데이터셋의 차원을 축소하기 위함
       ![image](https://github.com/user-attachments/assets/f021bbc0-9614-4628-b896-4b045d078b2b) <br/>
       -> 정확도는 69%, 64%, 68% 로 비교적 낮음
-  - C) LDA를 사용한 차원 축소
+  - B) LDA를 사용한 차원 축소
     - 적용 이유: PCA는 X 데이터만을 사용해 차원 축소를 하지만, LDA는 X 데이터와 y 데이터를 사용해 차원을 축소하기 때문<br/>
       ![image](https://github.com/user-attachments/assets/07b6465d-04b8-40d9-9081-d6f603942a92)<br/>
       -> 정확도가 85%, 80%, 83% 로 증가
