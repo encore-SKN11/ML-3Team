@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/704b348d-e270-47fa-a4a0-4ce539bb5bbc)# 환자의 특성에 따른 폐암 진행 속도 예측하기
+# 환자의 특성에 따른 폐암 진행 속도 예측하기
 
 # 1️⃣ 팀 소개
 > SK네트웍스 Family AI 캠프 11기 ML Project<br/>
@@ -110,7 +110,7 @@
   -> EDA에서 도출해낸 결과와 비슷한 결과를 보임
 - 과적합 문제를 해결하기 위한 방안: 하이퍼 파라미터 조정
   - max_depth=5 (트리의 최대 깊이), n_samples_split=5 (내부 노드의 최소 샘플 수) 조정<br/>
-  - 정확도: 96%
+  - 정확도: 96% <br/>
   ![image](https://github.com/user-attachments/assets/4d75e2b9-99a9-4388-9804-fae739413acc) <br/>
 
 <br/><br/>
@@ -118,7 +118,7 @@
 # 7️⃣ 과적합 해결하기
 ### SVM (Support Vector Machine)
 - 적용 이유: 고차원 데이터의 과적합을 방지해주는 모델
-- 정확도
+- 정확도<br/>
   ![image](https://github.com/user-attachments/assets/4b42e0d6-00bc-4dd0-8fe6-670e0618336d) <br/>
 - DecisionBoundaryDisplay를 통한 시각화
   - A) 차원이 맞지 않아 시각화 실패
@@ -148,6 +148,8 @@
 - Soft Voting 시각화
 ![image](https://github.com/user-attachments/assets/b717306c-1da0-4a3e-b6ef-94eb625fa10c)
   -> Hard Voting에 비해 정확도가 낮게 나오는 이유는 과적합된 모델의 영향이 낮아진 것이라 볼 수 있음
+  
+<br/><br/>
 
 # 9️⃣ 한 줄 회고
 | 팀원  | 한 줄 회고                 |
