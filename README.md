@@ -100,8 +100,8 @@
 - 정확도: 88% <br/>
   ![image](https://github.com/user-attachments/assets/99f8de71-6294-48c7-98b0-83501e7d2a6c) <br/>
 - 정확도를 높이기 위한 GridSearchCV
-  - GridSearchCV 적용 후 정확도: 90.8%
-  ![image](https://github.com/user-attachments/assets/07cc7abc-e83a-46ce-a557-9c8dc8dccf66)
+  - GridSearchCV 적용 후 정확도: 90.8% <br/>
+  ![image](https://github.com/user-attachments/assets/85274a64-a2a3-4501-b180-170c8fa899d8) <br/>
 
 
 ### 3) Decision Tree
