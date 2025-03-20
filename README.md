@@ -78,34 +78,33 @@
 - 적용 이유: 비선형 데이터에서 정확도가 높은 모델
 - 정확도: 98.4% -> ⚠️ 과적합 의심
 - KFold를 통한 교차검증 진행
-  - 모델 정확도: 99.2%
-  ![image](https://github.com/user-attachments/assets/36aa70bc-cb92-43e6-9cba-7d6ab1a4a932)
+  - 모델 정확도: 99.2% <br/>
+  ![image](https://github.com/user-attachments/assets/36aa70bc-cb92-43e6-9cba-7d6ab1a4a932) <br/>
 
    
 ### 2) Logistic Regression
 - 적용 이유: 소프트맥스를 사용하면 다중 레이블 분류가 가능
-- 정확도: 88%
-  ![image](https://github.com/user-attachments/assets/99f8de71-6294-48c7-98b0-83501e7d2a6c)
+- 정확도: 88% <br/>
+  ![image](https://github.com/user-attachments/assets/99f8de71-6294-48c7-98b0-83501e7d2a6c) <br/>
 
 
 ### 3) Decision Tree
-- 적용 이유: 폐암 진행 레벨에 따라 분할해 예측하기 위해 사용
-  ![image](https://github.com/user-attachments/assets/6c5f23f5-2a6c-46c5-852f-1988bc551878)
+- 적용 이유: 폐암 진행 레벨에 따라 분할해 예측하기 위해 사용 <br/>
+  ![image](https://github.com/user-attachments/assets/6c5f23f5-2a6c-46c5-852f-1988bc551878) <br/>
 - 정확도: 100% -> ⚠️ 과적합 의심
-- 특성 중요도 시각화
-  ![image](https://github.com/user-attachments/assets/aeb4dad7-1a23-488b-b3b1-0098f21d2a34)
-  <br/>
+- 특성 중요도 시각화 <br/>
+  ![image](https://github.com/user-attachments/assets/aeb4dad7-1a23-488b-b3b1-0098f21d2a34)  <br/>
   > ❓ EDA에서 도출해낸 결과와 다르다!
   > 하나의 Decision Tree만을 사용해서 편향된 결과일 가능성이 높음 <br/>
   >    👉🏻 앙상블 기법 중 Random Forest를 사용하자!
   <br/>
-  - Random Forest 상세 성능 지표
-    ![image](https://github.com/user-attachments/assets/21c90c90-a338-430b-a779-754762455743)
-  - Random Forest를 적용한 특성 중요도 시각화
-    ![image](https://github.com/user-attachments/assets/66686203-c1ea-4b20-ad9a-a88e1f53f74b)
+  - Random Forest 상세 성능 지표<br/>
+    ![image](https://github.com/user-attachments/assets/21c90c90-a338-430b-a779-754762455743) <br/>
+  - Random Forest를 적용한 특성 중요도 시각화<br/>
+    ![image](https://github.com/user-attachments/assets/66686203-c1ea-4b20-ad9a-a88e1f53f74b) <br/>
     -> EDA에서 도출해낸 결과와 비슷한 결과를 보임
-  - 과적합 문제를 해결하기 위한 방안: 트리의 최대 깊이(5), 내부 노드의 최소 샘플 수(5) 조정
-    ![image](https://github.com/user-attachments/assets/4d75e2b9-99a9-4388-9804-fae739413acc)
+  - 과적합 문제를 해결하기 위한 방안: 트리의 최대 깊이(5), 내부 노드의 최소 샘플 수(5) 조정<br/>
+    ![image](https://github.com/user-attachments/assets/4d75e2b9-99a9-4388-9804-fae739413acc) <br/>
 
 <br/><br/>
 
@@ -113,21 +112,24 @@
 ### SVM (Support Vector Machine)
 - 적용 이유: 고차원 데이터의 과적합을 방지해주는 모델
 - 정확도
-  ![image](https://github.com/user-attachments/assets/4b42e0d6-00bc-4dd0-8fe6-670e0618336d)
+  ![image](https://github.com/user-attachments/assets/4b42e0d6-00bc-4dd0-8fe6-670e0618336d) <br/>
 - DecisionBoundaryDisplay를 통한 시각화
-  - 0) 차원이 맞지 않아 시각화 실패
-    ![image](https://github.com/user-attachments/assets/e45589e5-0bed-4ba3-bb9f-6c565264b461)
-  - 1) PCA를 사용한 차원 축소
+  - A) 차원이 맞지 않아 시각화 실패
+    ![image](https://github.com/user-attachments/assets/e45589e5-0bed-4ba3-bb9f-6c565264b461) <br/>
+  - B) PCA를 사용한 차원 축소
     - 적용 이유: 데이터셋의 차원을 축소하기 위함
-      ![image](https://github.com/user-attachments/assets/896b3340-1c3b-4d2d-930d-86bfe2015cb2)
+      ![image](https://github.com/user-attachments/assets/896b3340-1c3b-4d2d-930d-86bfe2015cb2) <br/>
       -> 정확도는 70%, 64%, 70% 로 비교적 낮음
-  - 2) LDA를 사용한 차원 축소
-    - 적용 이유: PCA는 X 데이터만을 사용해 차원 축소를 하지만, LDA는 X 데이터와 y 데이터를 사용해 차원을 축소하기 때문
-      ![image](https://github.com/user-attachments/assets/fed959a9-ddef-4c25-9ea8-5bc2dbf8f282)
+  - C) LDA를 사용한 차원 축소
+    - 적용 이유: PCA는 X 데이터만을 사용해 차원 축소를 하지만, LDA는 X 데이터와 y 데이터를 사용해 차원을 축소하기 때문<br/>
+      ![image](https://github.com/user-attachments/assets/fed959a9-ddef-4c25-9ea8-5bc2dbf8f282)<br/>
       -> 정확도가 83%, 82%, 85% 로 증가
 
+<br/><br/>
 
-# 7️⃣ 한 줄 회고
+# 8️⃣ 앙상블 적용하기
+
+# 9️⃣ 한 줄 회고
 | 팀원  | 한 줄 회고                 |
 |-------|----------------------------|
 | 정수  |  |
