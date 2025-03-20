@@ -1,4 +1,4 @@
-# 환자의 특성에 따른 폐암 진행 속도 예측하기
+![image](https://github.com/user-attachments/assets/704b348d-e270-47fa-a4a0-4ce539bb5bbc)# 환자의 특성에 따른 폐암 진행 속도 예측하기
 
 # 1️⃣ 팀 소개
 > SK네트웍스 Family AI 캠프 11기 ML Project<br/>
@@ -101,13 +101,17 @@
   > 하나의 Decision Tree만을 사용해서 편향된 결과일 가능성이 높음 <br/>
   >    👉🏻 앙상블 기법 중 Random Forest를 사용하자!
   <br/>
-  - Random Forest 상세 성능 지표<br/>
-    ![image](https://github.com/user-attachments/assets/21c90c90-a338-430b-a779-754762455743) <br/>
-  - Random Forest를 적용한 특성 중요도 시각화<br/>
-    ![image](https://github.com/user-attachments/assets/66686203-c1ea-4b20-ad9a-a88e1f53f74b) <br/>
-    -> EDA에서 도출해낸 결과와 비슷한 결과를 보임
-  - 과적합 문제를 해결하기 위한 방안: 트리의 최대 깊이(5), 내부 노드의 최소 샘플 수(5) 조정<br/>
-    ![image](https://github.com/user-attachments/assets/4d75e2b9-99a9-4388-9804-fae739413acc) <br/>
+
+ #### 🌳 Random Forest
+- Random Forest 상세 성능 지표<br/>
+  ![image](https://github.com/user-attachments/assets/f7de14f3-0684-4a07-82b3-f2623087a20c) <br/>
+- Random Forest를 적용한 특성 중요도 시각화<br/>
+  ![image](https://github.com/user-attachments/assets/66686203-c1ea-4b20-ad9a-a88e1f53f74b) <br/>
+  -> EDA에서 도출해낸 결과와 비슷한 결과를 보임
+- 과적합 문제를 해결하기 위한 방안: 하이퍼 파라미터 조정
+  - max_depth=5 (트리의 최대 깊이), n_samples_split=5 (내부 노드의 최소 샘플 수) 조정<br/>
+  - 정확도: 96%
+  ![image](https://github.com/user-attachments/assets/4d75e2b9-99a9-4388-9804-fae739413acc) <br/>
 
 <br/><br/>
 
@@ -121,16 +125,29 @@
     ![image](https://github.com/user-attachments/assets/e45589e5-0bed-4ba3-bb9f-6c565264b461) <br/>
   - B) PCA를 사용한 차원 축소
     - 적용 이유: 데이터셋의 차원을 축소하기 위함
-      ![image](https://github.com/user-attachments/assets/896b3340-1c3b-4d2d-930d-86bfe2015cb2) <br/>
-      -> 정확도는 70%, 64%, 70% 로 비교적 낮음
+      ![image](https://github.com/user-attachments/assets/f021bbc0-9614-4628-b896-4b045d078b2b) <br/>
+      -> 정확도는 69%, 64%, 68% 로 비교적 낮음
   - C) LDA를 사용한 차원 축소
     - 적용 이유: PCA는 X 데이터만을 사용해 차원 축소를 하지만, LDA는 X 데이터와 y 데이터를 사용해 차원을 축소하기 때문<br/>
-      ![image](https://github.com/user-attachments/assets/fed959a9-ddef-4c25-9ea8-5bc2dbf8f282)<br/>
-      -> 정확도가 83%, 82%, 85% 로 증가
+      ![image](https://github.com/user-attachments/assets/07b6465d-04b8-40d9-9081-d6f603942a92)<br/>
+      -> 정확도가 85%, 80%, 83% 로 증가
 
 <br/><br/>
 
 # 8️⃣ 앙상블 적용하기
+- KNN, Logistic Regression, Random Forest, SVC
+### Hard Voting
+- 적용 이유: 학습기를 결합시켜 강한 학습기를 만들기 위해 사용
+- Hard Voting 시각화
+![image](https://github.com/user-attachments/assets/a5b0fa78-4975-400e-b0ad-ce66a579a0b4)
+  -> 각 모델이 높은 성능을 보였기에 Hard Voting은 최적의 결과를 낸 것임
+  -> 단, 아직 과적합 우려가 있음
+
+### Soft Voting 
+- 적용 이유: 상대적으로 과적합된 모델의 영향력을 낮추기 위해 사용
+- Soft Voting 시각화
+![image](https://github.com/user-attachments/assets/b717306c-1da0-4a3e-b6ef-94eb625fa10c)
+  -> Hard Voting에 비해 정확도가 낮게 나오는 이유는 과적합된 모델의 영향이 낮아진 것이라 볼 수 있음
 
 # 9️⃣ 한 줄 회고
 | 팀원  | 한 줄 회고                 |
