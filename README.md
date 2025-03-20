@@ -84,6 +84,16 @@
   - 모델 정확도: 99.2% <br/>
   ![image](https://github.com/user-attachments/assets/36aa70bc-cb92-43e6-9cba-7d6ab1a4a932) <br/>
 
+- 차원 축소를 통한 KNN 시각화
+  - PCA <br/>
+  ![image](https://github.com/user-attachments/assets/c9217bd2-c353-4f8c-b283-a3d337d87398)
+  - LDA <br/>
+  ![image](https://github.com/user-attachments/assets/dda3bc28-7b24-4a28-8ebb-2861787d7d37)
+
+- LDA 후 K값에 따른 성능 변화 시각화
+  ![image](https://github.com/user-attachments/assets/0059e903-b762-4ced-ab2c-52d297a70bae)
+
+ <br/>
    
 ### 2) Logistic Regression
 - 적용 이유: 소프트맥스를 사용하면 다중 레이블 분류가 가능
