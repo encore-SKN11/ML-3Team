@@ -1,4 +1,4 @@
-# 환자의 상태에 따른 폐암 진행 속도 예측하기
+# 환자의 특성에 따른 폐암 진행 속도 예측하기
 
 # 1️⃣ 팀 소개
 > SK네트웍스 Family AI 캠프 11기 ML Project<br/>
@@ -32,23 +32,7 @@
 
 <br/><br/>
 
-# 2️⃣프로젝트 개요
-<바꾸기>
-폐암은 전 세계적으로 암 사망의 주요 원인으로 뽑힐 만큼 조기 발견과 치료가 생존율을 결정짓는 중요한 질환 중 하나이다. 폐암은 조기에 발견하지 않으면 빠르게 진행되며, 생존에도 큰 영향을 미치는 치명적인 질환이다. 폐암이 얼마나 빨리 진행되는지는 다양한 변수에 의해 달라질 수 있다. 본 프로젝트에서는 환자의 환경적·유전적 요인 및 생활 습관이 폐암 진행 속도에 미치는 영향을 분석하고, 데이터 탐색적 분석(EDA)을 통해 주요 요인을 시각적으로 이해하는 것을 목표로 한다.
-<br/>
-<br/>
-## 🚀프로젝트명
-- 데이터로 보는 폐암 진행 속도의 결정 요인
-<br/>
-
-## 📂사용한 데이터
--  [Lung Cancer Prediction](https://www.kaggle.com/datasets/thedevastator/cancer-patients-and-air-pollution-a-new-link/data?status=pending&suggestionBundleId=178)
-  - 데이터 수집 기간: 정확한 기간은 명시되지 않았으나, 6년간 수집한 데이터
-
-
-<br/>
-
-# 3️⃣기술 스택
+# 2️⃣ 기술 스택
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=Python&logoColor=white">
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=vscode&logoColor=white">
@@ -61,30 +45,87 @@
 </p>
 <br/><br/>
 
-# 4️⃣WBS
+# 3️⃣ EDA 결과 다시보기
+- 기존 예측: 폐암 진행 속도는 공기 오염도와 연관이 있을 것이다.
+- 실제 폐암 진행 속도에 영향을 끼치는 TOP 6 요인
+  - 비만, 알코올, 균형 잡히지 않은 식단, 먼지 알레르기, 유전적 요인, 간접 흡연
+![image](https://github.com/user-attachments/assets/50923369-c6eb-4d4b-941b-506a2378bd97)
+
+<br/><br/>
+
+# 4️⃣ WBS
 | 작업 명                | 시작일 | 종료일 | 담당자         | 산출물        |
 |-------------------------|-------|-------|-----------------|---------------|
-| Machine Learning 모델 적용       | 03-14 | 03-19 | ALL    |  Jupiter Notebook 코드  | 
-| 문서 작업 및 발표 준비   | 03-19 | 03-20 | ALL             |  README.md     | 
+| Machine Learning 모델 적용       | 03-14 | 03-19 | ALL    |  Jupyter Notebook  | 
+| 문서 작업   | 03-19 | 03-20 | 배정수, 현유경            |  README.md     | 
+| 발표 준비   | 03-19 | 03-20 | 신준희             |  발표     |
 | 최종 점검                | 03-20 | 03-21 | ALL             |               | 
 
 <br/><br/>
 
-# 5️⃣분석 방법
-## 1. 폐암 예측 데이터셋에 적합한 모델 찾기
-- 지도 학습 분류 모델을 선정한 이유
-  - 우리의 목표: 폐암 진행 레벨을 예측하는 모델 만들기
-  - EDA를 통해 분석한 결과를 바탕으로 폐암 진행 레벨 컬럼을 target 데이터로 설정
-    - 폐암 진행 레벨 컬럼은 1,2,3의 값으로 나눠져 있음
-  - 폐암 진행 레벨 컬럼과 상관관계를 가진 컬럼은 X 데이터로 설정
-  - 입력 데이터를 주어진 라벨로 분류하는 것이므로 지도 학습 중 분류 모델을 선정 
+# 5️⃣ 적합한 머신러닝 모델 선택하기
+- 프로젝트 목표: 환자의 특성에 따른 폐암 진행도를 예측하자!
+- EDA를 통해 파악한 데이터 구조 활용
+  - `Target data`: 페암 진행 레벨 컬럼
+  - `Input data`: EDA를 통해 폐암 진행 레벨과 상관관계를 보인 컬럼
+> [!NOTE]
+> Input data를 폐암 진행 레벨(1,2,3)로 분류하는 것이니 지도학습 중 분류 모델을 사용하자!
 
 <br/><br/>
 
-# 6️⃣ Machine Learning 결과
+# 6️⃣ 지도 학습 분류 모델 적용하기
+### 1) KNN
+- 적용 이유: 비선형 데이터에서 정확도가 높은 모델
+- 정확도: 98.4% -> ⚠️ 과적합 의심
+- KFold를 통한 교차검증 진행
+  - 모델 정확도: 99.2%
+  ![image](https://github.com/user-attachments/assets/36aa70bc-cb92-43e6-9cba-7d6ab1a4a932)
 
+   
+### 2) Logistic Regression
+- 적용 이유: 소프트맥스를 사용하면 다중 레이블 분류가 가능
+- 정확도: 88%
+  ![image](https://github.com/user-attachments/assets/99f8de71-6294-48c7-98b0-83501e7d2a6c)
+
+
+### 3) Decision Tree
+- 적용 이유: 폐암 진행 레벨에 따라 분할해 예측하기 위해 사용
+  ![image](https://github.com/user-attachments/assets/6c5f23f5-2a6c-46c5-852f-1988bc551878)
+- 정확도: 100% -> ⚠️ 과적합 의심
+- 특성 중요도 시각화
+  ![image](https://github.com/user-attachments/assets/aeb4dad7-1a23-488b-b3b1-0098f21d2a34)
+  <br/>
+  > ❓ EDA에서 도출해낸 결과와 다르다!
+  > 하나의 Decision Tree만을 사용해서 편향된 결과일 가능성이 높음 <br/>
+  >    👉🏻 앙상블 기법 중 Random Forest를 사용하자!
+  <br/>
+  - Random Forest 상세 성능 지표
+    ![image](https://github.com/user-attachments/assets/21c90c90-a338-430b-a779-754762455743)
+  - Random Forest를 적용한 특성 중요도 시각화
+    ![image](https://github.com/user-attachments/assets/66686203-c1ea-4b20-ad9a-a88e1f53f74b)
+    -> EDA에서 도출해낸 결과와 비슷한 결과를 보임
+  - 과적합 문제를 해결하기 위한 방안: 트리의 최대 깊이(5), 내부 노드의 최소 샘플 수(5) 조정
+    ![image](https://github.com/user-attachments/assets/4d75e2b9-99a9-4388-9804-fae739413acc)
 
 <br/><br/>
+
+# 7️⃣ 과적합 해결하기
+### SVM (Support Vector Machine)
+- 적용 이유: 고차원 데이터의 과적합을 방지해주는 모델
+- 정확도
+  ![image](https://github.com/user-attachments/assets/4b42e0d6-00bc-4dd0-8fe6-670e0618336d)
+- DecisionBoundaryDisplay를 통한 시각화
+  - 0) 차원이 맞지 않아 시각화 실패
+    ![image](https://github.com/user-attachments/assets/e45589e5-0bed-4ba3-bb9f-6c565264b461)
+  - 1) PCA를 사용한 차원 축소
+    - 적용 이유: 데이터셋의 차원을 축소하기 위함
+      ![image](https://github.com/user-attachments/assets/896b3340-1c3b-4d2d-930d-86bfe2015cb2)
+      -> 정확도는 70%, 64%, 70% 로 비교적 낮음
+  - 2) LDA를 사용한 차원 축소
+    - 적용 이유: PCA는 X 데이터만을 사용해 차원 축소를 하지만, LDA는 X 데이터와 y 데이터를 사용해 차원을 축소하기 때문
+      ![image](https://github.com/user-attachments/assets/fed959a9-ddef-4c25-9ea8-5bc2dbf8f282)
+      -> 정확도가 83%, 82%, 85% 로 증가
+
 
 # 7️⃣ 한 줄 회고
 | 팀원  | 한 줄 회고                 |
