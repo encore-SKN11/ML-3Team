@@ -7,23 +7,23 @@
 
 ## 👤팀원 소개
 
-<table>
+<table align="center">
   <thead>
     <td align="center">
       <a href="">
-        <img src="https://github.com/user-attachments/assets/a28f14f0-2e04-4bb9-be4f-2fe81924e523" height="150" width="150" alt="jungsu"/><br /><hr/>
+        <img src="https://github.com/user-attachments/assets/a28f14f0-2e04-4bb9-be4f-2fe81924e523" height="150" width="200" alt="jungsu"/><br /><hr/>
         배정수
       </a><br />
     </td>
     <td align="center">
       <a href="https://github.com/HybuKimo">
-        <img src="https://github.com/HybuKimo.png" width="150" alt="junhee"/><br /><hr/>
+        <img src="https://github.com/HybuKimo.png" width="200" alt="junhee"/><br /><hr/>
         신준희
       </a><br />
     </td>
     <td align="center">
       <a href="https://github.com/yugyeongh">
-        <img src="https://github.com/yugyeongh.png" width="150" alt="yugyeong"/><br /><hr/>
+        <img src="https://github.com/yugyeongh.png" width="200" alt="yugyeong"/><br /><hr/>
         현유경
       </a><br />
     </td>
