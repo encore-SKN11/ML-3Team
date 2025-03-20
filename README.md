@@ -49,7 +49,7 @@
 - 기존 예측: 폐암 진행 속도는 공기 오염도와 연관이 있을 것이다.
 - 실제 폐암 진행 속도에 영향을 끼치는 TOP 6 요인
   - 비만, 알코올, 균형 잡히지 않은 식단, 먼지 알레르기, 유전적 요인, 간접 흡연
-![image](https://github.com/user-attachments/assets/50923369-c6eb-4d4b-941b-506a2378bd97)
+<img width="793" alt="image" src="https://github.com/user-attachments/assets/13636432-f78d-4b45-baed-40a6462cca55" />
 
 <br/><br/>
 
