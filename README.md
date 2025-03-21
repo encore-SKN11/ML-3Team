@@ -102,7 +102,7 @@
  <br/>
    
 ### 2) Logistic Regression
-- 적용 이유: 소프트맥스를 사용하면 다중 레이블 분류가 가능
+- 적용 이유: 소프트맥스를 사용하면 다중 클래스 분류가 가능
 - 정확도: 88% <br/>
   ![image](https://github.com/user-attachments/assets/99f8de71-6294-48c7-98b0-83501e7d2a6c) <br/>
 - 정확도를 높이기 위한 GridSearchCV
