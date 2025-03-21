@@ -94,10 +94,10 @@
   - PCA <br/>
   ![image](https://github.com/user-attachments/assets/257cca82-7005-4cfc-bf0c-9649203669f9)
   - LDA <br/>
-  ![image](https://github.com/user-attachments/assets/dda3bc28-7b24-4a28-8ebb-2861787d7d37)
+  ![image](https://github.com/user-attachments/assets/9f2f50ff-c359-4073-87bb-48262c803035)
 
 - LDA 후 K값에 따른 성능 변화 시각화<br/>
-  ![image](https://github.com/user-attachments/assets/0059e903-b762-4ced-ab2c-52d297a70bae)<br/>
+  ![image](https://github.com/user-attachments/assets/db4b2c5b-3519-40fb-92ce-0d95b8b9f326)<br/>
 
  <br/>
    
