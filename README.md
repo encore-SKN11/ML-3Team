@@ -84,7 +84,7 @@
 - 적용 이유: 비선형 데이터에서 정확도가 높은 모델
 - 정확도: 98.4% -> ⚠️ 과적합 의심
 - K 값에 따른 성능 변화 시각화 <br/>
-  ![image](https://github.com/user-attachments/assets/09042a78-2ede-4e60-914e-eb36da9a9a89)
+  ![image](https://github.com/user-attachments/assets/632eab53-821d-472c-9576-87cf71529fb0)
 
 - KFold를 통한 교차검증 진행
   - 모델 정확도: 99.2% <br/>
@@ -92,7 +92,7 @@
 
 - 차원 축소를 통한 KNN 시각화
   - PCA <br/>
-  ![image](https://github.com/user-attachments/assets/c9217bd2-c353-4f8c-b283-a3d337d87398)
+  ![image](https://github.com/user-attachments/assets/257cca82-7005-4cfc-bf0c-9649203669f9)
   - LDA <br/>
   ![image](https://github.com/user-attachments/assets/dda3bc28-7b24-4a28-8ebb-2861787d7d37)
 
